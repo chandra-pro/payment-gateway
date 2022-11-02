@@ -34,19 +34,22 @@ const displayRazorpay = async(amount)=>{
       
       handler: function (response) {
         alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        alert('payment successful');
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature);
       },
       prefill: {
         name: "buyBold",
-        email: "123abc@gmail.com",
-        contact: "6206593821",
+        email: "goluchandra1812@gmail.com",
+        contact: "9955938696",
       },
+      // callback_url: 'http://payment-gateway-neon.vercel.app/',
+      // redirect: true
     };  
     const paymentObject = new window.Razorpay(options)
     paymentObject.open() 
   }
-const price="50";
+const price="1";
 
   return (
     <Card style={{ width: '18rem' }}>
