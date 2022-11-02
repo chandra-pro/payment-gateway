@@ -1,4 +1,6 @@
 
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import './App.css';
 function App() {
 const loadScript =(src) => {
@@ -45,14 +47,23 @@ const displayRazorpay = async(amount)=>{
     paymentObject.open() 
   }
 const price="50";
+
   return (
-    
-    <div className="App">
-      <button className="App-link" onClick={() => displayRazorpay(price)}>
-        Pay Now
-      </button>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://tse1.mm.bing.net/th?id=OIP.AqanoSvtR0CDT6zRRO7dkAHaE8&pid=Api&P=0" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button onClick={() => displayRazorpay(price)} variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
   );
 }
 
 export default App;
+
+
+
