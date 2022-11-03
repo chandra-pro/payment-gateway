@@ -25,7 +25,7 @@ const displayRazorpay = async(amount)=>{
       return;
     }
     const options = {
-      key: "rzp_test_9rNfj5yBcD31y1",
+      key: "rzp_live_EHvgPO4F7RuwSl",
       currency: "INR",
       amount: amount*100,
       name: "buyBold",
